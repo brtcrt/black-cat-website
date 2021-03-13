@@ -20,6 +20,7 @@ body {
   font-weight: bold;
   background: -webkit-gradient(linear, left top, right top, from(#ff8a00), to(#e17374));
   background: linear-gradient(to right, #ff8a00 0%, #e17374 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 1.3em;
@@ -192,6 +193,7 @@ nav ul.secondary-nav li a:hover {
   .navbar nav ul li a {
     background: -webkit-gradient(linear, left top, right top, from(#ff8a00), to(#e17374));
     background: linear-gradient(to right, #ff8a00 0%, #e17374 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 1em;
@@ -199,6 +201,9 @@ nav ul.secondary-nav li a:hover {
   }
   .navbar nav ul.primary-nav {
     padding-left: 2em;
+  }
+  .navbar nav ul.primary-nav li.current a {
+    font-weight: bold;
   }
 }
 /*# sourceMappingURL=features.css.map */

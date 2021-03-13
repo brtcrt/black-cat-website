@@ -206,7 +206,7 @@ nav ul.secondary-nav li a:hover {
   .navbar nav ul.primary-nav {
     padding-left: 2em;
   }
-  .navbar nav li.current a {
+  .navbar nav ul.primary-nav li.current a {
     font-weight: bold;
   }
 }

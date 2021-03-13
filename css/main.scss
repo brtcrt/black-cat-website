@@ -192,9 +192,13 @@ nav {
         }
         ul.primary-nav{
             padding-left: 2em;
+            li.current{
+                a{
+                    font-weight: bold;
+                }
+                
+            }
         }
-        li.current a {
-            font-weight: bold;
-        }
+
     }
 }
