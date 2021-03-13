@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+:root {
+  --primary-color: #5a5a5a
+;
+}
+
+body {
+  background: #f2f2f2;
+  margin: 0;
+  font-family: "Poppins";
+}
+
+.navbar {
+  background: white;
+  padding: 1em;
+}
+
+.navbar .logo {
+  text-decoration: none;
+  font-weight: bold;
+  background: -webkit-gradient(linear, left top, right top, from(#ff8a00), to(#e17374));
+  background: linear-gradient(to right, #ff8a00 0%, #e17374 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.3em;
+}
+
+.navbar .logo span {
+  color: var(--primary-color);
+}
+
+.navbar nav {
+  display: none;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.navbar .mobile-menu {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.features-section {
+  display: inline-block;
+}
+
+.features-section li {
+  list-style-type: none;
+  font-size: 1.2em;
+  margin-bottom: 0.3em;
+  position: relative;
+}
+
+.features-section li:before {
+  content: "";
+  left: -2em;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/bullet.svg");
+  background-size: contain;
+  margin-right: .5em;
+}
+
+.features-section .container {
+  margin-top: 2em;
+  padding-left: 2em;
+}
+
+.features-section ul {
+  padding-left: 4em;
+}
+
+.features-title {
+  font-size: 2.2em;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.bot-logo {
+  display: none;
+  width: 45%;
+  height: 45%;
+}
+
+.ul-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+  padding-right: 2em;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  right: 0;
+  top: 0;
+  background-color: #444444;
+  height: 100vh;
+  padding: 1em;
+}
+
+nav ul.primary-nav {
+  margin-top: 4em;
+}
+
+nav ul.primary-nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: .5em;
+  font-size: 1.3em;
+  text-align: right;
+}
+
+nav ul.primary-nav li a:hover {
+  font-weight: bold;
+}
+
+nav ul.secondary-nav {
+  margin-top: 0em;
+}
+
+nav ul.secondary-nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: .5em;
+  font-size: 1.3em;
+  text-align: right;
+}
+
+nav ul.secondary-nav li a:hover {
+  font-weight: bold;
+}
+
+.mobile-menu-exit {
+  float: right;
+  margin: .5em;
+  margin-bottom: 1em;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 769px) {
+  .bot-logo {
+    display: block;
+    width: 45%;
+    height: 45%;
+  }
+  .mobile-menu, .mobile-menu-exit {
+    display: none;
+  }
+  .navbar.container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 180px auto;
+        grid-template-columns: 180px auto;
+  }
+  .navbar nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+  }
+  .navbar nav ul li a {
+    background: -webkit-gradient(linear, left top, right top, from(#ff8a00), to(#e17374));
+    background: linear-gradient(to right, #ff8a00 0%, #e17374 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1em;
+    padding: .1em, 1em;
+  }
+  .navbar nav ul.primary-nav {
+    padding-left: 2em;
+  }
+}
+/*# sourceMappingURL=features.css.map */
