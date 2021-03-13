@@ -10,20 +10,20 @@
 <body>
         <div class="navbar">
             <div class="container">
-                <a class="logo" href="index.html">Bläck<span>Cät</span></a>
-                <img id="mobile-cta" class="mobile-menu" src="./images/menu.svg" alt="Open Navigation Menu">
+                <a class="logo" href="index.html">Bläck<span>Cät</span></a><br>
+                <img id="mobile-cta" class="mobile-menu" src="./images/whitemenu.svg" alt="Open Navigation Menu">
                 <nav>
                     <img id="mobile-exit" class="mobile-menu-exit" src="./images/exit.svg" alt="Close Navigation Menu">
 
                     <ul class="primary-nav">
                         <li class="current"><a href="index.html">Home</a></li>
                         <li><a href="features.html">Features</a></li>
-                        <li><a href="#">About Me</a></li>
+                        <li><a href="about.html">About Me</a></li>
                     </ul>
 
                     <ul class="secondary-nav">
-                        <li class="add-link"><a href="#">Add The Bot</a></li>
-                        <li><a href="#">Join The Server</a></li>
+                        <li class="add-link"><a href="https://discord.com/oauth2/authorize?client_id=670266777015549980&scope=bot&permissions=8">Add The Bot</a></li>
+                        <li><a href="https://discord.gg/jXQvBj4tup">Join The Server</a></li>
                     </ul>
                 </nav>
             </div>
@@ -33,20 +33,34 @@
             <div class="container">
                 <div class="left-col">
                     <p class="subhead">Simle, Fun &amp; Functional</p>
-                    <h1>Bläck Cät</h1>
+                    <h1 class="big-title">Bläck Cät</h1>
                     <div class="hero-cta">
-                        <a href="#" class="primary-cta">
-                            Add The Bot</a>
-                        <a href="#" class="join-server-cta">
-                            <img src="./images/Discord-Logo-Color.svg" alt="Join the Discord Server">Join the Discord Server!
+                        <a href="https://discord.com/oauth2/authorize?client_id=670266777015549980&scope=bot&permissions=8" class="primary-cta">
+                            Add The Bot
                         </a>
+                        <p class="subhead2">=bot?</p>
+                        <div class="guildNumber" id="guild"></div>
                     </div>
                 </div>
 
                 <img class="hero-img" src="./images/smth.gif" alt="Shows functionality">
             </div>
         </section>
-
+        <section class="info">
+            <div class="info-container" id="info-container">
+                <p class="info-para">
+                    Bläck Cät, the functional and fun bot made by me, brtcrt! Made this bot as a side project, later decided to make it public. 
+                    Hope everyone enjoys it! If you have any questions check out the "Features" tab and the "About Me" page, which has a FAQ part, of the site, dm brtcrt#5538, or join the discord server.
+                    Bläck Cät is open-source you can check the code and let me know if you think anything should change!
+                </p>
+                <div class="github-button">
+                    <a href="https://github.com/brtcrt/black-cat-discord-bot"class=git-but>
+                        <img class="github-logo"src="./images/whitegithub2.png" alt="Github logo and link to github."> 
+                    </a>
+                </div>
+            </div>
+        </section>
+        
         <script>
 
             const mobileBtn = document.getElementById("mobile-cta")
@@ -62,6 +76,23 @@
             });
 
         </script>
-
+        <script>
+            fetch("stats.json")
+                .then(function (response) {
+                    return response.json();
+                })
+                .then(function (data) {
+                    appendData(data);
+                })
+                .catch(function (err) {
+                    console.log(err);
+                });
+                function appendData(data) {
+                    var container = document.getElementById("guild");
+                    var div = document.createElement("infoDiv");
+                    div.innerHTML = "Currently in " + String(data.guildNumber) +" guilds!";
+                    container.appendChild(div);
+                }
+        </script>
 </body>
 </html>
