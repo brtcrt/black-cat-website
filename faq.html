@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bläck Cät Discord Bot</title>
+    <link rel="stylesheet" href="css/faq.css">
+    <link rel = "icon" href ="images/logo-circle.png"> 
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="index.html">Bläck<span>Cät</span></a>
+            <img id="mobile-cta" class="mobile-menu" src="./images/whitemenu.svg" alt="Open Navigation Menu">
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="./images/exit.svg" alt="Close Navigation Menu">
+
+                <ul class="primary-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li ><a href="features.html">Features</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li class="current"><a href="faq.html">FAQ</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li><a href="#">Add The Bot</a></li>
+                    <li><a href="#">Join The Server</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="features-section">
+        <div class="container">
+            <h1 class="features-title">FAQ</h1>
+            <div class="ul-container">
+                <ul>
+                    <li>Q: How can I see all the commands? <br>A: You can go to the <a href="features.html">"Features" </a> section in this website or use =bot? in a channel.</li>
+                    <li>Q: How can I trust this bot? <br>A: The bot is open-source! You can check it if you like. It is in <a href="https://github.com/brtcrt/black-cat-discord-bot">my gihub.</a></li>
+                    <li>Q: I found a bug. What do I do? <br>A: You can join the <a href="">support server </a> and report it there, or send me a dm on Discord. brtcrt#5538</li>
+                    <li>Q: Why is the bot offline sometimes. <br>A: I can't keep the bot online 24/7 yet. I'm trying to find a solution. If you have any suggestions, I'd love to hear them out.</li>
+                    <li>Q: Why does everything have a gradient color? <br>A: I love color gradients! If you want to learn more about the whole color gradient situation go to the "<a href="about.html">About Me</a>" page.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <script>
+
+        const mobileBtn = document.getElementById("mobile-cta")
+            nav = document.querySelector("nav")
+            mobileBtnExit = document.getElementById("mobile-exit");
+
+        mobileBtn.addEventListener("click", () => {
+            nav.classList.add("menu-btn");
+        });
+
+        mobileBtnExit.addEventListener("click", () => {
+            nav.classList.remove("menu-btn");
+        });
+
+    </script>
+
+</body>
+</html>

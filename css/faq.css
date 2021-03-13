@@ -45,84 +45,59 @@ body {
   cursor: pointer;
 }
 
-a {
-  color: #444444;
-}
-
 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 
-.about {
-  padding-top: 1.5em;
-  margin: 1em,1em;
-  padding-right: 1.5em;
-  margin-left: 1.5em;
+.features-section {
+  display: inline-block;
 }
 
-.about .container-about {
-  background: -webkit-gradient(linear, left top, right top, from(#5dacd6), to(#ff8a00));
-  background: linear-gradient(to right, #5dacd6 0%, #ff8a00 100%);
+.features-section li {
+  margin-left: -2.2em;
+  list-style-type: none;
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  position: relative;
+  background: -webkit-gradient(linear, left top, right top, from(#725ff3), to(#d53232));
+  background: linear-gradient(to right, #725ff3 0%, #d53232 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.about .hello-link {
-  display: inline;
-  text-decoration: none;
+.features-section li:before {
+  content: "";
+  left: -1.7em;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/whiteline.svg");
+  background-size: contain;
+  margin-right: .5em;
+  margin-top: 1em;
 }
 
-.about .about-title {
+.features-section .container {
+  margin-top: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.features-section ul {
+  padding-left: 5em;
+}
+
+.features-title {
+  display: inline;
   font-size: 2.2em;
-  display: inline;
-  background: -webkit-gradient(linear, left top, right top, from(#56bb56), to(#0ebed5));
-  background: linear-gradient(to right, #56bb56 0%, #0ebed5 100%);
+  font-weight: bold;
+  text-transform: capitalize;
+  background: -webkit-gradient(linear, left top, right top, from(#d53232), to(#725ff3));
+  background: linear-gradient(to right, #d53232 0%, #725ff3 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.about .about-subtitle {
-  font-size: 1.3em;
-  display: inline;
-  background: -webkit-gradient(linear, left top, right top, from(#56bb56), to(#0ebed5));
-  background: linear-gradient(to right, #56bb56 0%, #0ebed5 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.about .long-about-title {
-  font-size: 1.4em;
-  display: inline;
-  background: -webkit-gradient(linear, left top, right top, from(#56bb56), to(#0ebed5));
-  background: linear-gradient(to right, #56bb56 0%, #0ebed5 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.about .photo-caption {
-  font-size: 1.3em;
-  padding-top: 1.5em;
-  display: inline;
-  background: -webkit-gradient(linear, left top, right top, from(#56bb56), to(#0ebed5));
-  background: linear-gradient(to right, #56bb56 0%, #0ebed5 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.about p {
-  font-size: 1.02em;
-  text-decoration: underline;
-}
-
-.about .photo {
-  display: none;
 }
 
 nav.menu-btn {
@@ -190,12 +165,10 @@ nav ul.secondary-nav li a:hover {
 }
 
 @media only screen and (min-width: 769px) {
-  .about .photo {
+  .bot-logo {
     display: block;
-    text-align: center;
-  }
-  .about .photo .photo-image {
-    width: auto;
+    width: 45%;
+    height: 45%;
   }
   .mobile-menu, .mobile-menu-exit {
     display: none;
@@ -231,7 +204,6 @@ nav ul.secondary-nav li a:hover {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    display: inline-block;
     font-size: 1em;
     padding: .1em, 1em;
   }
@@ -242,4 +214,4 @@ nav ul.secondary-nav li a:hover {
     font-weight: bold;
   }
 }
-/*# sourceMappingURL=about.css.map */
+/*# sourceMappingURL=faq.css.map */

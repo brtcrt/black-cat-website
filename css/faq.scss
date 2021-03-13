@@ -8,6 +8,7 @@ body {
     background: #222222;
     margin: 0;
     font-family: "Poppins";
+    
 }
 
 .navbar {
@@ -38,75 +39,56 @@ body {
         cursor: pointer;
     }
 }
-
-a {
-    color: #444444;
-}
-
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
 
-.about {
-    .container-about {
-        
-        background: linear-gradient(to right, #5dacd6 0%, #ff8a00 100%);
+.features-section {
+
+    li {
+        margin-left: -2.2em;
+        list-style-type: none;
+        font-size: 1.2em;
+        margin-bottom: 1em;
+        position: relative;
+        background: linear-gradient(to right, #725ff3 0%, #d53232 100%);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        &:before {
+            content: "";
+            left: -1.7em;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-image: url("../images/whiteline.svg");
+            background-size: contain;
+            margin-right: .5em;
+            margin-top: 1em;
+        }
     }
-    .hello-link {
-        display: inline;
-        text-decoration: none;
+    .container{
+        margin-top: 2em;
+        padding-left: 2em;
+        padding-right: 2em;
     }
-    .about-title {
-        font-size: 2.2em;
-        display: inline;
-        background: linear-gradient(to right, #56bb56 0%, #0ebed5 100%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+    ul {
+        padding-left: 5em;
     }
-    .about-subtitle {
-        font-size: 1.3em;
-        display: inline;
-        background: linear-gradient(to right, #56bb56 0%, #0ebed5 100%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    .long-about-title {
-        font-size: 1.4em;
-        display: inline;
-        background: linear-gradient(to right, #56bb56 0%, #0ebed5 100%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    .photo-caption {
-        font-size: 1.3em;
-        padding-top: 1.5em;
-        display: inline;
-        background: linear-gradient(to right, #56bb56 0%, #0ebed5 100%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    p {
-        font-size: 1.02em;
-        text-decoration: underline;
-    }
-    padding-top: 1.5em;
-    margin: 1em,1em;
-    padding-right: 1.5em;
-    margin-left: 1.5em;
-    .photo {
-        display: none;
-    }
+    display: inline-block;
+
 }
 
+.features-title{
+    display: inline;
+    font-size: 2.2em;
+    font-weight: bold;
+    text-transform: capitalize;
+    background: linear-gradient(to right, #d53232 0%, #725ff3 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 nav.menu-btn {
     display: block;
@@ -174,19 +156,11 @@ nav {
     cursor: pointer;
 }
 
-@media only screen and (min-width: 650px) {
-
-}
-
 @media only screen and (min-width: 769px) {
-    .about {
-        .photo {
-            display: block;
-            text-align: center;
-            .photo-image{
-                width: auto;
-            }
-        }
+    .bot-logo {
+        display: block;
+        width: 45%;
+        height: 45%;
     }
 
     .mobile-menu, .mobile-menu-exit {
@@ -213,7 +187,6 @@ nav {
                     background-clip: text;
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
-                    display: inline-block;
                     font-size: 1em;
                     padding: .1em, 1em;
                 }
@@ -226,9 +199,8 @@ nav {
                 a{
                     font-weight: bold;
                 }
-                
             }
         }
-
+        
     }
 }
