@@ -116,6 +116,56 @@ ul {
     }
 }
 
+.blog {
+    .container-about {
+        
+        background: linear-gradient(to right, #5dacd6 0%, #ff8a00 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .about-title {
+        font-size: 2.2em;
+        display: inline;
+        background: linear-gradient(to right, #56bb56 0%, #0ebed5 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .long-about-title {
+        font-size: 1.4em;
+        display: inline;
+        background: linear-gradient(to right, #56bb56 0%, #0ebed5 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    p {
+        font-size: 1.02em;
+        text-decoration: underline;
+    }
+    .latest-post-container {
+        padding-left: 2em;
+        padding-bottom: 4em;
+        .container-post {
+            padding-left: 1em;
+        }
+    }
+    .container-post {
+        a {
+            display: inline;
+            background: linear-gradient(to right, #ff61d2 0%, #ff0000 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    margin-top: 4em;
+    padding-top: 5em;
+    margin: 1em,1em;
+    padding-right: 1.5em;
+    margin-left: 1.5em;
+}
 
 nav.menu-btn {
     display: block;

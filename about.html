@@ -91,8 +91,21 @@
             </div>
         </section>
 
-        <script>
-
+        <section class="blog">
+            <div class="container-about">
+                <h2 class="about-title">
+                    <a href="https://medium.com/@brtcrt/">
+                        Most Recent Blog Post <br>
+                    </a>
+                </h2>
+                <div class="latest-post-container">
+                    <h3 class="long-about-title" id="post-title"></h3>
+                    <div class="container-post" id="post-content"></div>
+                </div>
+                
+            </div>
+        </section>
+        <script type="text/javascript">
             const mobileBtn = document.getElementById("mobile-cta")
                 nav = document.querySelector("nav")
                 mobileBtnExit = document.getElementById("mobile-exit");
@@ -106,5 +119,20 @@
             });
 
         </script>
+        <script type="text/javascript">
+            async function getMedium() {
+                const url = "https://rsstojson.com/v1/api/?rss_url=https://medium.com/feed/@brtcrt"
+                let response = await fetch(url);
+                if (response.ok) {
+                    let json = await response.json();
+                    console.log(json);
+                    let latestPost = json.rss.channel[0].item[0];
+                    document.getElementById("post-title").innerHTML = latestPost.title;
+                    document.getElementById("post-content").innerHTML = latestPost["content:encoded"][0];
+                };
+            };
+            getMedium();
+        </script>
+
 </body>
 </html>
