@@ -121,6 +121,15 @@ ul {
   text-decoration: underline;
 }
 
+.about .about-long a {
+  display: inline;
+  background: -webkit-gradient(linear, left top, right top, from(#ff61d2), to(#ff0000));
+  background: linear-gradient(to right, #ff61d2 0%, #ff0000 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .about .photo {
   display: none;
 }
@@ -189,7 +198,7 @@ nav ul.secondary-nav li a:hover {
   cursor: pointer;
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 984px) {
   .about .photo {
     display: block;
     text-align: center;
@@ -236,7 +245,7 @@ nav ul.secondary-nav li a:hover {
     padding: .1em, 1em;
   }
   .navbar nav ul.primary-nav {
-    padding-left: 2em;
+    padding-left: 1em;
   }
   .navbar nav ul.primary-nav li.current a {
     font-weight: bold;

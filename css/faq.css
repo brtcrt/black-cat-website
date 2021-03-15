@@ -164,7 +164,7 @@ nav ul.secondary-nav li a:hover {
   cursor: pointer;
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 984px) {
   .bot-logo {
     display: block;
     width: 45%;
@@ -208,7 +208,7 @@ nav ul.secondary-nav li a:hover {
     padding: .1em, 1em;
   }
   .navbar nav ul.primary-nav {
-    padding-left: 2em;
+    padding-left: 1em;
   }
   .navbar nav ul.primary-nav li.current a {
     font-weight: bold;
