@@ -1,101 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Bläck Cät Discord Bot</title>
-        <link rel="stylesheet" href="css/main.css">
-        <link rel = "icon" href ="images/logo-circle.png"> 
-    </head>
-<body>
-        <div class="navbar">
-            <div class="container">
-                <a class="logo" href="index.html">Bläck<span>Cät</span></a><br>
-                <img id="mobile-cta" class="mobile-menu" src="./images/whitemenu.svg" alt="Open Navigation Menu">
-                <nav>
-                    <img id="mobile-exit" class="mobile-menu-exit" src="./images/exit.svg" alt="Close Navigation Menu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bläck Cät Discord Bot</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="icon" href="images/logo-circle.png" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="container">
+        <a class="logo" href="index.html">Bläck<span>Cät</span></a
+        ><br />
+        <img
+          id="mobile-cta"
+          class="mobile-menu"
+          src="./images/whitemenu.svg"
+          alt="Open Navigation Menu"
+        />
+        <nav>
+          <img
+            id="mobile-exit"
+            class="mobile-menu-exit"
+            src="./images/exit.svg"
+            alt="Close Navigation Menu"
+          />
 
-                    <ul class="primary-nav">
-                        <li class="current"><a href="index.html">Home</a></li>
-                        <li><a href="features.html">Features</a></li>
-                        <li><a href="about.html">About Me</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                    </ul>
+          <ul class="primary-nav">
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
 
-                    <ul class="secondary-nav">
-                        <li class="add-link"><a href="https://discord.com/oauth2/authorize?client_id=670266777015549980&scope=bot&permissions=8">Add The Bot</a></li>
-                        <li><a href="https://discord.gg/jXQvBj4tup">Join The Server</a></li>
-                        <li><a href="https://www.patreon.com/brtcrt">Support Me</a></li>
-                        <li><a href="https://top.gg/bot/670266777015549980">Vote on top.gg</a></li>
-                    </ul>
-                </nav>
-            </div>
+          <ul class="secondary-nav">
+            <li class="add-link">
+              <a
+                href="https://discord.com/oauth2/authorize?client_id=670266777015549980&scope=bot&permissions=8"
+                >Add The Bot</a
+              >
+            </li>
+            <li><a href="https://discord.gg/jXQvBj4tup">Join The Server</a></li>
+            <li><a href="https://www.patreon.com/brtcrt">Support Me</a></li>
+            <li>
+              <a href="https://top.gg/bot/670266777015549980">Vote on top.gg</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <section class="hero">
+      <div class="container">
+        <div class="left-col">
+          <p class="subhead">Simple, Fun &amp; Functional</p>
+          <h1 class="big-title">Bläck Cät</h1>
+          <div class="hero-cta">
+            <a
+              href="https://discord.com/oauth2/authorize?client_id=670266777015549980&scope=bot&permissions=8"
+              class="primary-cta"
+            >
+              Add The Bot
+            </a>
+            <p class="subhead2">=bot?</p>
+            <a href="https://discordbotlist.com/bots/670266777015549980"
+              ><img
+                src="https://discordbotlist.com/api/v1/bots/670266777015549980/widget"
+            /></a>
+          </div>
         </div>
 
-        <section class="hero">
-            <div class="container">
-                <div class="left-col">
-                    <p class="subhead">Simple, Fun &amp; Functional</p>
-                    <h1 class="big-title">Bläck Cät</h1>
-                    <div class="hero-cta">
-                        <a href="https://discord.com/oauth2/authorize?client_id=670266777015549980&scope=bot&permissions=8" class="primary-cta">
-                            Add The Bot
-                        </a>
-                        <p class="subhead2">=bot?</p>
-                        <div class="guildNumber" id="guild"></div>
-                    </div>
-                </div>
+        <img
+          class="hero-img"
+          src="./images/smth.gif"
+          alt="Shows functionality"
+        />
+      </div>
+    </section>
+    <section class="info">
+      <div class="info-container" id="info-container">
+        <p class="info-para">
+          Bläck Cät, the functional and fun bot made by me, brtcrt! Made this
+          bot as a side project, later decided to make it public. Hope everyone
+          enjoys it! If you have any questions check out the "Features" page,
+          "FAQ" page and the "About Me" page of the site, dm brtcrt#5538, or
+          join the discord server. Bläck Cät is open-source! You can check the
+          code and let me know if you think anything should change!
+        </p>
+        <div class="github-button">
+          <a
+            href="https://github.com/brtcrt/black-cat-discord-bot"
+            class="git-but"
+          >
+            <img
+              class="github-logo"
+              src="./images/whitegithub2.png"
+              alt="Github logo and link to github."
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+    <script>
+      const mobileBtn = document.getElementById("mobile-cta");
+      nav = document.querySelector("nav");
+      mobileBtnExit = document.getElementById("mobile-exit");
 
-                <img class="hero-img" src="./images/smth.gif" alt="Shows functionality">
-            </div>
-        </section>
-        <section class="info">
-            <div class="info-container" id="info-container">
-                <p class="info-para">
-                    Bläck Cät, the functional and fun bot made by me, brtcrt! Made this bot as a side project, later decided to make it public. 
-                    Hope everyone enjoys it! If you have any questions check out the "Features" page, "FAQ" page and the "About Me" page of the site, dm brtcrt#5538, or join the discord server.
-                    Bläck Cät is open-source! You can check the code and let me know if you think anything should change!
-                </p>
-                <div class="github-button">
-                    <a href="https://github.com/brtcrt/black-cat-discord-bot"class=git-but>
-                        <img class="github-logo"src="./images/whitegithub2.png" alt="Github logo and link to github."> 
-                    </a>
-                </div>
-            </div>
-        </section>
-        <script>
+      mobileBtn.addEventListener("click", () => {
+        nav.classList.add("menu-btn");
+      });
 
-            const mobileBtn = document.getElementById("mobile-cta")
-                nav = document.querySelector("nav")
-                mobileBtnExit = document.getElementById("mobile-exit");
-
-            mobileBtn.addEventListener("click", () => {
-                nav.classList.add("menu-btn");
-            });
-
-            mobileBtnExit.addEventListener("click", () => {
-                nav.classList.remove("menu-btn");
-            });
-
-        </script>
-        <script>
-            fetch("stats.json")
-                .then(function (response) {
-                    return response.json();
-                })
-                .then(function (data) {
-                    appendData(data);
-                })
-                .catch(function (err) {
-                    console.log(err);
-                });
-                function appendData(data) {
-                    var container = document.getElementById("guild");
-                    var div = document.createElement("infoDiv");
-                    div.innerHTML = "Currently in " + String(data.guildNumber) +" guilds!";
-                    container.appendChild(div);
-                }
-        </script>
-</body>
+      mobileBtnExit.addEventListener("click", () => {
+        nav.classList.remove("menu-btn");
+      });
+    </script>
+    <script>
+      fetch("stats.json")
+        .then(function (response) {
+          return response.json();
+        })
+        .then(function (data) {
+          appendData(data);
+        })
+        .catch(function (err) {
+          console.log(err);
+        });
+      function appendData(data) {
+        var container = document.getElementById("guild");
+        var div = document.createElement("infoDiv");
+        div.innerHTML = "Currently in " + String(data.guildNumber) + " guilds!";
+        container.appendChild(div);
+      }
+    </script>
+  </body>
 </html>
